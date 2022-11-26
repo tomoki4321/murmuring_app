@@ -10,10 +10,6 @@
         <li><%= link_to('新規投稿',new_post_path)%></li>
         <li><%= link_to('投稿一覧',posts_path)%></li>
       </div>
-      <div class="right">
-        <li><a href="#">編集</a></li>
-        <li><a href="#">削除</a></li>
-      </div>
     </ul>
   </header>
   <h1>ブログ一覧</h1>
@@ -26,6 +22,7 @@
   <tr>
     <td><%= post.content %></td>
     <td><%= link_to '詳細確認', post_path(post.id) %></td>
+    <td><%= link_to '編集', edit_post_path(post.id) %></td>
   </tr>
 <% end %>
 </table>
