@@ -7,8 +7,8 @@
   <header>
     <ul>
       <div class="left">
-        <li><a href="#">新規投稿</a></li>
-        <li><a href="#">投稿一覧</a></li>
+        <li><%= link_to('新規投稿',new_post_path)%></li>
+        <li><%= link_to('投稿一覧',posts_path)%></li>
       </div>
       <div class="right">
         <li><a href="#">編集</a></li>
@@ -16,6 +16,18 @@
       </div>
     </ul>
   </header>
+  <h1>ブログ一覧</h1>
+<table>
+  <tr>
+    <th>内容</th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.content %></td>
+  </tr>
+<% end %>
+</table>
   <footer>
     <div class="footer_content">
     </div>
