@@ -3,6 +3,7 @@ body {
 }
 
 header {
+  position: relative;
   background-color: #2B2B2B;
   height: 50px;
   width: 100%;
@@ -27,10 +28,6 @@ header li {
   float: left;
 }
 
-header .left {
-  float: left;
-}
-
 header ul:after {
   content: "";
   display: block;
@@ -42,7 +39,27 @@ footer {
   bottom: 0;
   height: 70px;
   background-color: #283A4B;
-  font-size: 0.8rem;
   width: 100%;
   color: #fff;
   }
+
+table {
+  position: absolute;
+  left: 45%;
+  top: 25%;
+}
+
+.notice {
+  position: absolute;
+  left: 45%;
+  top: 15%;
+  color: red;
+}
+
+h1 {
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+}

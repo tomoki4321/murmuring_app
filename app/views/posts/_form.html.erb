@@ -10,8 +10,9 @@
     </div>
   <% end %>
   <div class="blog_content">
+    <p>投稿内容を記入してください</p>
     <%= form.label :content %>
     <%= form.text_field :content %>
+    <%= form.submit %>
   </div>
-  <%= form.submit %>
 <% end %>
